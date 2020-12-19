@@ -8,11 +8,18 @@ Louise recently launched a campaign for her play, Fever, and reached close to he
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
-I created a pivot table that outlines the amount of campaigns for each outcome (successful, failed, and canceled) based on the month the campaign was launched, filtered on the parent category to only display theater campaigns. For this view, I placed "Outcomes" in the columns and values, "Date Created Coversion" to rows, and "Parent Category" to filters, filtered on theater. I wanted this table to be able to be filtered by year to have the ability to see the trends for only a certain time period if desired, so, I created a "Years" column in the dataset based off of the "Date Created Conversion" field and placed the new "Years" field  in the filters for the pivot table. In order to vizualize this data, I created a line chart which displayed the amount of successful, failed, and cancelled campaigns with the months on the x-axis.
+I created a pivot table that outlines the amount of campaigns for each outcome (successful, failed, and canceled) based on the month the campaign was launched, filtered on the parent category to only display theater campaigns. For this view, I placed "Outcomes" in the columns and values, "Date Created Coversion" to rows, and "Parent Category" to filters, filtered on theater. I wanted this table to be able to be filtered by year to have the ability to see the trends for only a certain time period if desired, so, I created a "Years" column in the dataset based off of the "Date Created Conversion" field and placed the new "Years" field  in the filters for the pivot table. 
+![SS_Outcomes_vs_Launch_Pivot](https://github.com/cailynjmiller/kickstarter-analysis/blob/main/SS_Outcomes_vs_Launch_Pivot.png)
+
+
+In order to vizualize this data, I created a line chart which displayed the amount of successful, failed, and cancelled campaigns with the months on the x-axis.
 ![Theater_Outcomes_vs_Launch](https://github.com/cailynjmiller/kickstarter-analysis/blob/main/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 I created a table to display the amount of campaigns in each outcome based on the funding goals with the outcomes in the columns ("Number Successful, etc.) and ranges of funding goals in the rows ("1000 to 4999", etc.). I used the COUNTIFS function in each cell to count the amount of entries where the subcategory is "play", the outcome is the same as the column heading, and the goal range is the same as the row in the Kickstarter dataset. To the right of the columns, I created a "Total Projects" column where I used the SUM function to add the projects in each category for the particular funding goal range. To the right of the total column, I created 3 more columns for the percentage of the total for each outcome ("Percentage Successful", etc.) where I used a function to divide the number of that outcome by the total for the particular funding goal range and changed the format to be a percentage.
+[SS_Outcomes_vs_Goals_table](https://github.com/cailynjmiller/kickstarter-analysis/blob/main/SS_Outcomes_vs_Goals_table.png)
+
+
 In order to visualize this data, I created a line chart to display the percentages of successful, failed, and canceled campaings based on the funding goal range. There are 3 lines for each outcome, the funding goals on the x axis, and the percentage of total on the y axis.
 ![Outcomes_vs_Goals](https://github.com/cailynjmiller/kickstarter-analysis/blob/main/Outcomes_vs_Goals.png)
 
