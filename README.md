@@ -3,12 +3,12 @@
 ## Overview of Project
 
 ### Purpose
-Louise recently launched a campaign for her play, Fever, and reached close to her fundraising goal in a short amount of time. She wants to see the success rates of other plays based on their luanch dates and funding goals to uncover trends.
+Louise recently launched a campaign for her play, Fever, and reached close to her fundraising goal in a short amount of time. She wants to see the success rates of other plays based on their launch dates and funding goals to uncover trends.
 
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
-I created a pivot table that outlines the amount of campaigns for each outcome (successful, failed, and canceled) based on the month the campaign was launched, filtered on the parent category to only display theater campaigns. For this view, I placed "Outcomes" in the columns and values, "Date Created Coversion" to rows, and "Parent Category" to filters, filtered on theater. I wanted this table to be able to be filtered by year to have the ability to see the trends for only a certain time period if desired, so, I created a "Years" column in the dataset based off of the "Date Created Conversion" field and placed the new "Years" field  in the filters for the pivot table.<br/>
+I created a pivot table that shows the amount of campaigns that fell under each outcome (successful, failed, and canceled) based on the month the campaign was launched, filtered on the parent category to only display theater campaigns. For this view, I placed "Outcomes" in the columns and values, "Date Created Coversion" to rows, and "Parent Category" to filters, filtered on theater. I wanted this table to be able to be filtered by year to have the ability to see the trends for only a certain time period if desired, so, I created a "Years" column in the dataset based off of the "Date Created Conversion" field and placed the new "Years" field  in the filters for the pivot table.<br/>
 ![SS_Outcomes_vs_Launch_Pivot](https://github.com/cailynjmiller/kickstarter-analysis/blob/main/SS_Outcomes_vs_Launch_Pivot.png)<br/>
 
 In order to vizualize this data, I created a line chart which displayed the amount of successful, failed, and cancelled campaigns with the months on the x-axis.<br/>
