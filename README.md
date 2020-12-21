@@ -16,7 +16,7 @@ In order to vizualize this data, I created a line chart which displayed the amou
 
 ### Analysis of Outcomes Based on Goals
 I created a table to display the amount of campaigns in each outcome based on the funding goals with the outcomes in the columns ("Number Successful, etc.) and ranges of funding goals in the rows ("1000 to 4999", etc.). I used the COUNTIFS function in each cell to count the amount of entries where the subcategory is "play", the outcome is the same as the column heading, and the goal range is the same as the row in the Kickstarter dataset. To the right of the columns, I created a "Total Projects" column where I used the SUM function to add the projects in each category for the particular funding goal range. To the right of the total column, I created 3 more columns for the percentage of the total for each outcome ("Percentage Successful", etc.) where I used a function to divide the number of that outcome by the total for the particular funding goal range and changed the format to be a percentage.<br/>
-[SS_Outcomes_vs_Goals_table](SS_Outcomes_vs_Goals_table.png)<br/>
+![SS_Outcomes_vs_Goals_table](SS_Outcomes_vs_Goals_table.png)<br/>
 
 
 In order to visualize this data, I created a line chart to display the percentages of successful, failed, and canceled campaings based on the funding goal range. There are 3 lines for each outcome, the funding goals on the x axis, and the percentage of total on the y axis.<br/>
